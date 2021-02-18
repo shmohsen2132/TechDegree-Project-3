@@ -1,0 +1,39 @@
+/* General */
+
+body {
+    text-align: center;
+}
+
+/* Header */
+
+.title {
+    padding: 20px 60px;
+    background-color: #2d3945;
+    margin-bottom: 25px;
+}
+
+
+.main-heading {
+    background-color: #2d3945;
+    text-transform: uppercase;
+    color: white;
+    margin: 0 auto;
+}
+
+.promo-title {
+    color: #2d3945;
+}
+
+.promo-paragraph {
+    color: #9da3a8;
+}
+
+.line1 {
+    border: 3px solid black;
+    width: 90%;
+}
+
+.line2 {
+    border: 1px solid black;
+    width: 90%;
+}
