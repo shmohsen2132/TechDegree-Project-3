@@ -20,6 +20,10 @@ body {
     margin: 0 auto;
 }
 
+.promo {
+    margin-bottom: 25px;
+}
+
 .promo-title {
     color: #2d3945;
 }
@@ -36,4 +40,35 @@ body {
 .line2 {
     border: 1px solid black;
     width: 90%;
+    margin-bottom: 25px;
+}
+
+.contact-info {
+    padding: 5px 20px;
+    text-align: left;
+}
+
+label {
+    color: #9da3a8;
+    margin-bottom: 15px;
+}
+
+.form-container:not(:first-of-type) {
+    margin-top: 20px;
+}
+
+input {
+    padding: 15px 40px;
+    background-color: #eff0f1;
+    border: none;
+    border-radius: 2%;
+}
+
+input::placeholder {
+    text-align: right;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
 }
