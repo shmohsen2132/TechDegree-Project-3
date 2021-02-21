@@ -9,7 +9,6 @@ body {
 .title {
     padding: 20px 60px;
     background-color: #2d3945;
-    margin-bottom: 25px;
 }
 
 
@@ -28,9 +27,16 @@ body {
     color: #2d3945;
 }
 
-p {
+p{
     color: #9da3a8;
     font-weight: bold;
+}
+
+.form-paragraph {
+    color: #9da3a8;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .line1 {
@@ -79,6 +85,10 @@ input[type="radio"]:not(:first-of-type) {
     margin-top: 15px;
 }
 
+input[type="radio"]:last-of-type {
+    margin-bottom: 25px;
+}
+
 .checkbox-label,
 .radio-label {
     margin-left: 10px;
@@ -102,4 +112,42 @@ select {
     background-color: #eff0f1;
     border: none;
     border-radius: 2%;
+}
+
+textarea {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin-top: 15px;
+  outline: 0;
+  width: 90%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+.submit-button {
+    padding: 20px 60px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+    background-color: #4abbb5;
+    color: white;
+    font-size: 20px;
+}
+
+.submit-button:hover {
+    opacity: 0.75;
+    cursor: pointer;
+    
+}
+
+@media screen and (min-width: 768px){
+    main {
+        padding: 50px 200px;
+    }
 }

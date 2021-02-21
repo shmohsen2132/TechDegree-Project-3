@@ -15,21 +15,22 @@
             <h1 class="main-heading">The Code Review</h1>
         </div>
         
+    </header>
+
+    <main>
         <div class="promo">
             <h2 class="promo-title">
                 Signup for our newsletter
             </h2>
             <p class="promo-paragraph">Get the latest news on how your code is doing right in your inbox</p>
         </div>
-    </header>
 
-    <hr class="line1">
-    <hr class="line2">
-    <main>
+        <hr class="line1">
+        <hr class="line2">
 
         <div class="contact-info">
     
-            <form action="">
+            <form action="index.html">
                 <fieldset>
                     <legend class="contact-main-title">Contact Information</legend>
 
@@ -60,20 +61,18 @@
     
                     <div class="form-container">
                         <label for="province">Province</label>
-                        <select name="province" id="province" aria-placeholder="Choose State">
-                            <option value="alberta">AB</option>
-                            <option value="british-columbia">BC</option>
-                            <option value="ontario">ON</option>
-                            <option value="quebec">QC</option>
-                            <option value="newfoundland-and-labrador">NL</option>
-                            <option value="new-brunswick">NB</option>
-                            <option value="nova-scotia">NS</option>
-                            <option value="prince-edward-island">PE</option>
-                            <option value="saskatchewan">SK</option>
-                            <option value="yukon">YK</option>
-                            <option value="manitoba">MN</option>
-                            <option value="northwest-territories">NT</option>
-                            <option value="nunavut">NU</option>
+                        <select name="province" id="province">
+                            <option>Choose your province</option>
+                            <option value="alberta">Alberta</option>
+                            <option value="british-columbia">British Columbia</option>
+                            <option value="manitoba">Manitoba</option>
+                            <option value="new-brunswick">New Brunswick</option>
+                            <option value="newfoundland-and-labrador">Newfoundland and Labrador</option>
+                            <option value="nova-scotia">Nova Scotia</option>
+                            <option value="ontario">Ontario</option>
+                            <option value="prince-edward-island">Prince Edward Island</option>
+                            <option value="quebec">Quebec</option>
+                            <option value="saskatchewan">Saskatchewan</option>
                         </select>
                     </div>
 
@@ -88,7 +87,7 @@
 
                 <fieldset>
                     <legend>Newsletter</legend>
-                    <p>Select the newsletters you would like to receive</p>
+                    <p class="form-paragraph">Select the newsletters you would like to receive</p>
                     <input type="checkbox" name="html" id="html">
                     <label for="html" class="checkbox-label">HTML News</label>
                     <br>
@@ -98,14 +97,19 @@
                     <input type="checkbox" name="javascript" id="javascript">
                     <label for="javascript" class="checkbox-label">Javascript News</label>
 
-                    <p>Newsletter format</p>
+                    <p class="form-paragraph">Newsletter format</p>
                     <input type="radio" id="html-text" name="format">
                     <label for="html-text" class="radio-label">HTML Text</label>
                     <br>
                     <input type="radio" id="plain-text" name="format">
                     <label for="plain-text" class="radio-label">Plain Text</label>
                     <br>
+
+                    <label for="topics" class="form-paragraph">Other topics you'd like to hear about</label>
+                    <textarea name="topics" id="topics" cols="30" rows="10"></textarea>
+                    <button type="submit" class="submit-button">Sign Up</button>
                 </fieldset>
+                
             </form>
 
         </div>
