@@ -28,8 +28,9 @@ body {
     color: #2d3945;
 }
 
-.promo-paragraph {
+p {
     color: #9da3a8;
+    font-weight: bold;
 }
 
 .line1 {
@@ -56,12 +57,31 @@ label {
 .form-container:not(:first-of-type) {
     margin-top: 20px;
 }
+fieldset {
+    border: none;
+}
+
+legend {
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: 700;
+}
 
 input {
     padding: 15px 40px;
     background-color: #eff0f1;
     border: none;
     border-radius: 2%;
+}
+
+input[type="checkbox"]:not(:first-of-type),
+input[type="radio"]:not(:first-of-type) {
+    margin-top: 15px;
+}
+
+.checkbox-label,
+.radio-label {
+    margin-left: 10px;
 }
 
 input::placeholder {
@@ -71,4 +91,15 @@ input::placeholder {
 .form-container {
     display: flex;
     flex-direction: column;
+}
+
+#zipcode {
+    width: 20%;
+}
+
+select {
+    padding: 15px 40px;
+    background-color: #eff0f1;
+    border: none;
+    border-radius: 2%;
 }
