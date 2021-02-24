@@ -6,6 +6,9 @@
 body {
     text-align: center;
     font-family: Merriweather , Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Header */
@@ -59,17 +62,13 @@ p{
 
 .line1 {
     border: 3px solid black;
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    width: 90%;
 }
 
 .line2 {
     border: 1px solid black;
-    width: 95%;
+    width: 90%;
     margin-bottom: 25px;
-
 }
 
 
@@ -103,12 +102,16 @@ legend {
 
 
 
-input,
-select {
+input {
     padding: 18px 35px;
     background-color: #eff0f1;
     border: none;
-    max-width: 95%;
+}
+
+select {
+    padding: 15px 20px;
+    background-color: #eff0f1;
+    border: none;
 }
 
 input, 
@@ -159,7 +162,7 @@ textarea {
   height: auto;
   margin-top: 25px;
   outline: 0;
-  width: 90%;
+  width: 100%;
   background-color: #e8eeef;
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
@@ -167,6 +170,10 @@ textarea {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.format {
+    margin-top: 20px;
 }
 
 .submit-button {
@@ -179,6 +186,7 @@ textarea {
     background-color: #4abbb5;
     color: white;
     font-size: 20px;
+    width: 90%;
 }
 
 .submit-button:hover {
@@ -187,9 +195,10 @@ textarea {
     
 }
 
-.newsletter p:first-of-type {
+.newsletter-paragraph {
     line-height: 1.6rem;
 }
+
 
 .newsletter p:nth-of-type(2) {
     margin-top: 30px;
